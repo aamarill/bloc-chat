@@ -1,0 +1,18 @@
+.side-bar {
+	background-color: rgba(217, 217, 217, .8);
+	float: left;
+	width: 250px;
+	height: 803px;
+	font-family: sans-serif;
+	/* Add font */
+}
+
+.side-bar .title {
+	padding-left: 20px;
+	color: rgb(60,60,60);
+}
+
+.side-bar .room {
+	padding-left: 20px;
+	color: rgb(140,140,140);
+}
