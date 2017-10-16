@@ -1,7 +1,7 @@
 <div class="side-bar">
 	<h1 class="title">Bloc Chat</h1>
-	<div class="room" ng-repeat="room in home.Rooms">{{ room.$value }}
-		<br>
-		<br>
-	</div>
+	<form class="new-room-form">
+		<input class="new-room-button" type="button" value="New room">
+	</form>
+	<div class="room" ng-repeat="room in home.Rooms">{{ room.$value }}</div>
 </div>
