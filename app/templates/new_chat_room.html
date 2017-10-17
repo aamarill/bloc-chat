@@ -1,0 +1,12 @@
+
+
+
+<div class="modal-body" id="modal-body" ng-controller="newChatRoomCtrl as newChatRoom">
+	<h3 class="modal-title" id="modal-title">Create a new room</h3>
+	<form>
+		Enter room name:<br>
+		<input id="roomName" type="text" value=""><br>
+		<input type="button" value="Cancel" ng-click="newChatRoom.cancel()">
+		<input type="submit" value="Create room" ng-click="newChatRoom.create()">
+	</form>
+</div>

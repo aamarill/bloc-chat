@@ -40,3 +40,6 @@
 	background-color: rgb(250,250,250);
 	color: rgb(140,140,140);
 }
+
+/* Add per boostrap documentation */
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
