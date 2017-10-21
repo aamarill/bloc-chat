@@ -8,12 +8,12 @@
 	</div>
 	<div class="chat-room">
 		<h3 class="chat-room-title">{{ home.activeChatProperties.title }}</h3>
-		<div class="message-block">
+		<div class="message-block" ng-repeat="message in home.activeChatProperties.messages">
 			<div class="username-and-time">
-				<div class="username">{{ home.activeChatProperties.messages['1'].username }}</div>
-				<div class="time">time</div>
-			</div>
-			<div class="message">message</div>
+				<div class="username">{{ message.username }}</div>
+				<div class="time">{{ message.sentAt }}</div>
+			</div><br class="break1">
+			<div class="message">{{ message.content }}</div>
 		</div>
 	</div>
 </div>

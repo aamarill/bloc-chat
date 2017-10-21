@@ -16,7 +16,7 @@
 		* @desc Initialization the object to hold the properties of the current chat.
 		*/
 		Room.activeChatProperties = {
-			title: 'Please select a chat',
+			title: 'Please select a chat room',
 			id: '',
 			messages: {},
 		};
@@ -42,7 +42,7 @@
 			this.activeChatProperties = {
 				title: room.$value,
 				id: room.$id,
-				messages: messages,
+				messages: Message.all,
 			};
 
 		}
