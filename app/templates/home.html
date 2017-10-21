@@ -1,7 +1,19 @@
-<div class="side-bar">
-	<h1 class="title">Bloc Chat</h1>
-	<div class="new-room-form" ng-controller="newChatRoomCtrl as newChatRoom">
-		<button class="new-room-button btn btn-default" type="button" ng-click="newChatRoom.open()">New Room</button>
+<div ng-controller="HomeCtrl as home">
+	<div class="side-bar">
+		<h1 class="title">Bloc Chat</h1>
+		<div class="new-room-form" ng-controller="newChatRoomCtrl as newChatRoom">
+			<button class="new-room-button btn btn-default" type="button" ng-click="newChatRoom.open()">New Room</button>
+		</div>
+		<div class="room" ng-repeat="room in home.Rooms" ng-click="home.changeChat(room)">{{ room.$value }}</div>
 	</div>
-	<div class="room" ng-repeat="room in home.Rooms">{{ room.$value }}</div>
+	<div class="chat-room">
+		<h3 class="chat-room-title">{{ home.activeChatProperties.title }}</h3>
+		<div class="message-block">
+			<div class="username-and-time">
+				<div class="username">{{ home.activeChatProperties.messages['1'].username }}</div>
+				<div class="time">time</div>
+			</div>
+			<div class="message">message</div>
+		</div>
+	</div>
 </div>
