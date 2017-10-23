@@ -10,7 +10,7 @@
 			if(usernameNoSpaces && usernameNoSpaces != ""){
 
 				$cookies.put('BlocChatCurrentUser', usernameNoSpaces);
-				console.log("$cookies.get('BlocChatCurrentUser') = " + $cookies.get("BlocChatCurrentUser"));	
+				console.log("$cookies.get('BlocChatCurrentUser') = " + $cookies.get("BlocChatCurrentUser"));
 				Username.uibModalInstance.close();
 			}
 

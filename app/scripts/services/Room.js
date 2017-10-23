@@ -27,16 +27,10 @@
 		*/
 		Room.changeChat = function(room){
 
-			console.log("room.$id = " + room.$id);
-
 			/*
 			Now that we have the room id, we can populate the messages section with the messages.
  			*/
 			Message.getByRoomId(room.$id);
-
-			console.log("Message.all = " + Message.all);
-
-
 
 			/* Populate active chat properties */
 			this.activeChatProperties = {

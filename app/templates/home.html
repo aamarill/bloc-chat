@@ -16,4 +16,10 @@
 			<div class="message">{{ message.content }}</div>
 		</div>
 	</div>
+	<div class="message-bar" ng-controller="MessagesCtrl as Messages">
+		<textarea class="message-text" id="messageText" placeholder="Enter message..."></textarea>
+		<div class="send-button" ng-click="Messages.send(home.activeChatProperties.id)">
+		Send
+		</div>
+	</div>
 </div>
